@@ -17,8 +17,8 @@ header {
 header::before {
   content: "";
   position: absolute;
-  inset: 0;              /* top:0; right:0; bottom:0; left:0; */
-  background: rgba(0, 0, 0, 0.5);  /* полупрозрачный серый/чёрный */
+  inset: 0;              
+  background: rgba(0, 0, 0, 0.5);  
   z-index: 1;
   height: 540px;
 }
@@ -37,15 +37,14 @@ h1 {
 }
 
 .news article:nth-child(even) {
-  background-color: #f5f5f5; /* Светло-серый */
-  /* или */
+  background-color: #f5f5f5; 
 }
 
 .news article:nth-child(1) h2::before,
 .news article:nth-child(2) h2::before {
   content: "New";
   display: inline-block;
-  background-color: #ff4757; /* Красный фон */
+  background-color: #ff4757;
   color: white;
   font-size: 12px;
   font-weight: bold;
