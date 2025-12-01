@@ -36,6 +36,25 @@ h1 {
     padding: 50px 0 32px;
 }
 
+.news article:nth-child(even) {
+  background-color: #f5f5f5; /* Светло-серый */
+  /* или */
+}
+
+.news article:nth-child(1) h2::before,
+.news article:nth-child(2) h2::before {
+  content: "New";
+  display: inline-block;
+  background-color: #ff4757; /* Красный фон */
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
 article {
     width: 768px;
     margin: 0 auto 32px;
